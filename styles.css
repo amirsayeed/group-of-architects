@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
+* {
     font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
+}
+
+.text-light-gray {
+    color: #727272;
 }
 
 header {
@@ -45,13 +48,9 @@ nav li a {
 }
 
 .banner-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #131313;
-}
-
-.banner-des {
-    color: #727272;
 }
 
 .btn-primary {
@@ -65,6 +64,69 @@ nav li a {
 }
 
 .banner img {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
+}
+
+main {
+    max-width: 1440px;
+    margin: 80px;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-container-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-title {
+    font-size: 2.8rem;
+}
+
+.teams-title .quick-list {
+    font-weight: 500;
+}
+
+.teams-title .text-features {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
 }
